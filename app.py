@@ -21,7 +21,7 @@ final_docs=text_splitter.split_documents(documents=documents)
 embedding=HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 retriever=Chroma.from_documents(final_docs,embedding=embedding).as_retriever()
 
-y
+
 def retriever_tool_chroma_db(query: str) -> str:
     docs = retriever.invoke(query)
     return "\n\n".join([doc.page_content for doc in docs])[:3]
