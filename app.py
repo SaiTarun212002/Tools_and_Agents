@@ -1,8 +1,4 @@
 import streamlit as st
-# The line `from langchain_community.document_loaders import PyMuPDFLoader` is importing the
-# `PyMuPDFLoader` class from the `document_loaders` module within the `langchain_community` package.
-# This class is likely used for loading PDF documents and extracting text content from them for
-# further processing within the code.
 from langchain_community.document_loaders import PyMuPDFLoader
 from langchain_community.utilities import WikipediaAPIWrapper
 from langchain_community.tools import WikipediaQueryRun
