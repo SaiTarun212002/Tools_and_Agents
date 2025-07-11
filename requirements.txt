@@ -1,0 +1,10 @@
+langchain==0.2.0
+pylance
+streamlit
+langchain_community
+langchain_core
+pymupdf
+sentence-transformers
+chromadb
+langchain_huggingface
+ipykernel
