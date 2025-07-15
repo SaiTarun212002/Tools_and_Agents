@@ -80,5 +80,4 @@ if uploaded_file is not None:
     if user_input:
         response = agent_executor.invoke(user_input)
         st.write(response)
-    else:
-        st.write("It is outside the tool scope")
+    
